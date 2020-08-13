@@ -1,2 +1,5 @@
+MoodAnalysisException.java
+ MoodAnalysisException
+ MoodAnalysisException$ExceptionType
 MoodAnalyser.java
  MoodAnalyser

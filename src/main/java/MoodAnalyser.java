@@ -1,4 +1,3 @@
-
 public class MoodAnalyser {
     String message;
 
@@ -12,18 +11,19 @@ public class MoodAnalyser {
     }
 
     //Method for checking happy or sad mood
-    public String analyseMood(String message) {
+    public String analyseMood(String message) throws MoodAnalysisException {
         //nullpointer exception to return happy.
         try {
+            if (message.length() == 0) {
+                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_EMPTY, " ");
+            }
             if (message.contains("I am in sad mood.")) {
                 return "SAD";
-            } else if (message.contains("I am in any mood.")) {
-                return "HAPPY";
             } else {
-                return "null";
+                return "HAPPY";
             }
         } catch (NullPointerException e) {
-            return "HAPPY";
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_NULL, "NULL");
         }
     }
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoodAnalyserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-08-13T04:28:17" hostname="DESKTOP-SPMDGAR" time="0.001">
+<testsuite name="MoodAnalyserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-13T17:49:08" hostname="DESKTOP-SPMDGAR" time="0.002">
   <properties/>
-  <testcase name="happyMood_returnHappy_ifMoodEqualsOtherThanSad" classname="MoodAnalyserTest" time="0.001"/>
-  <testcase name="happyMood_returnHappy_ifMoodEqualsNull" classname="MoodAnalyserTest" time="0.0"/>
+  <testcase name="happyMood_returnHappy_ifMoodEqualsOtherThanSad" classname="MoodAnalyserTest" time="0.0"/>
+  <testcase name="invalidMood_throwsException_ifMessageEmpty" classname="MoodAnalyserTest" time="0.0"/>
   <testcase name="sadMood_returnSad_ifMoodEqualsSad" classname="MoodAnalyserTest" time="0.0"/>
+  <testcase name="invalidMood_throwsException_ifMessageNull" classname="MoodAnalyserTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
