@@ -13,13 +13,17 @@ public class MoodAnalyser {
 
     //Method for checking happy or sad mood
     public String analyseMood(String message) {
-        if (message.contains("I am in sad mood.")) {
-            return "SAD";
-        } else if (message.contains("I am in any mood.")) {
+        //nullpointer exception to return happy.
+        try {
+            if (message.contains("I am in sad mood.")) {
+                return "SAD";
+            } else if (message.contains("I am in any mood.")) {
+                return "HAPPY";
+            } else {
+                return "null";
+            }
+        } catch (NullPointerException e) {
             return "HAPPY";
         }
-        else
-            return "null";
     }
-
 }
